@@ -1,8 +1,7 @@
 package dome;
 
-public class CD
+public class CD extends Item
 {
-    private String title;
     private String artist;
     private int numofTracks;
     private int playingTime;
@@ -11,8 +10,7 @@ public class CD
 
     public CD(String title,String artist,int numofTracks,int playingTime,String comment)
     {
-        super();
-        this.title = title;
+        super(title);
         this.artist = artist;
         this.numofTracks = numofTracks;
         this.playingTime = playingTime;
